@@ -150,4 +150,4 @@ cython_debug/
 .vscode/launch.json
 
 # Debug dir
-debugs
+tests/*

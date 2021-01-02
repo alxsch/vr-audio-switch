@@ -5,11 +5,9 @@ import time, json, os
 for service in psutil.process_iter():
     data = service.as_dict()
 
-#thisDir = os.path.curdir
-newDir = os.path.relpath(path, './debugs/')
+if os.path.isdir('./tests') == False:
+    os.mkdir('./tests')
 
-print(newDir)
-
-out = open('output.json', 'w')
+out = open('.\\tests\\output.json', 'w')
 out.write(str(json.dumps(data, indent=2)))
 out.close()
