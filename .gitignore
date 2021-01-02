@@ -149,5 +149,5 @@ cython_debug/
 .history/
 .vscode/launch.json
 
-# Debug dir
+# Contents of debug dir
 tests/*
